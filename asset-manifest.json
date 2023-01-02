@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/Sibite-react/static/js/main.36c752ab.js",
+    "main.css": "/Sibite-react/static/css/main.827893e8.css",
+    "main.js": "/Sibite-react/static/js/main.d7f167c8.js",
     "index.html": "/Sibite-react/index.html",
-    "main.36c752ab.js.map": "/Sibite-react/static/js/main.36c752ab.js.map"
+    "main.827893e8.css.map": "/Sibite-react/static/css/main.827893e8.css.map",
+    "main.d7f167c8.js.map": "/Sibite-react/static/js/main.d7f167c8.js.map"
   },
   "entrypoints": [
-    "static/js/main.36c752ab.js"
+    "static/css/main.827893e8.css",
+    "static/js/main.d7f167c8.js"
   ]
 }
