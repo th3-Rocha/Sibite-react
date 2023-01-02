@@ -1,53 +1,26 @@
 import styled, { css } from 'styled-components'
+import hexToRgba from 'hex-to-rgba';
+import {COLORS} from '../values/colors';
 
-
-const Index = styled.div`
-  background-color: black;
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    
+const OuterBox = styled.div`
+  width: 20vw;
+  max-width: 275px;
+  @media screen and (max-width: 998px) {
+    max-width: 88px;
   }
-  body {
-    font-family: Helvetica;
-  }
-  /* NextJS */
-  html {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
-  body {
-    display: flex;
-    flex: 1;
-  }
-  #__next {
-    display: flex;
-    flex: 1;
-  }
-  /* Globals */
-  button,
-  a {
-    text-decoration: none;
-    opacity: 1;
-    transition: .3s;
-    &:hover,
-    &:focus {
-      opacity: .5;
-    }
-  }
+  height: 100vh;
+  border-right: 1px;
+  border-right-color: ${hexToRgba(COLORS.borderLine)};
+  border-right-style: solid;
 `
 
 
 
 function Menu() {
   return (
-    <Index>
+    <OuterBox>
       
-    </Index>
+    </OuterBox>
   );
 }
 
