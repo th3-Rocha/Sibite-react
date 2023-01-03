@@ -5,16 +5,17 @@ import {COLORS} from '../values/colors';
 const ButtonStyle = styled.button`
   @import url('https://fonts.cdnfonts.com/css/chirp-2');
 
-  background-color: black;
+  background-color: ${hexToRgba(COLORS.theme)};
   border-radius: 100vw;
   padding: 12px;
   font-size: 20px;
-  width: max-content;
   color: white;
-  display: flex;
+  
   border: 0px;
+  margin-top:16px;
+  margin-right: 30px;
   &:hover{
-    background-color: ${hexToRgba(COLORS.highlight)};
+    background-color: ${hexToRgba(COLORS.themeDark)};
     cursor: pointer;
   }
   font-family: 'Chirp', sans-serif;
@@ -23,6 +24,8 @@ const ButtonStyle = styled.button`
 
   p{
     margin: 0px 20px 0px 20px;
+    font-weight: 700;
+
   }
   @media screen and (max-width: 1360px) {
     p{
@@ -30,19 +33,23 @@ const ButtonStyle = styled.button`
     }
     
   }
-
+  @media screen and (min-width: 1360px) {
+    img{
+      display: none;
+    }
+    
+  }
 `
 
-
-function MenuButton(props) {
+function MenuSibitarButton(props) {
     return (
       <ButtonStyle>
-        <img src={process.env.PUBLIC_URL + "/assets/svg/"+ props.art +".svg"}/>
+        <img src={process.env.PUBLIC_URL + "/assets/svg/Sibitar.svg"}/>
         <p>
-          {props.name}
+          Sibitar
         </p>
       </ButtonStyle>
     );
   }
   
-  export default MenuButton;
+  export default MenuSibitarButton;

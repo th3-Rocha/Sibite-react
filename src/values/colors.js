@@ -10,6 +10,8 @@ var COLORS;
         trendHighLight: '#1d1f23',
         searchBar: '#202327',
         white: '#d6d9db',
+        theme: '#CBBC00',
+        themeDark: '9A8F00',
     }
     COLORS = Dark;
  }
@@ -21,6 +23,8 @@ var COLORS;
         trendHighLight: '#1d1f23',
         searchBar: '#202327',
         white: '#d6d9db',
+        theme: '#CBBC00',
+        themeDark: '9A8F00',
     }
     COLORS = Light;
  }

@@ -2,10 +2,12 @@ import styled, { css } from 'styled-components'
 import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
 import MenuButton from './MenuButton'
-
+import MenuSibitarButton from './MenuSibitarButton';
 const OuterBox = styled.div`
   width: 100vw;
-  max-width: 275px;
+  max-width: 251px;
+  padding-left: 12px;
+  padding-right: 12px;
   @media screen and (max-width: 1360px) {
     max-width: 88px;
     align-items: center;
@@ -45,6 +47,7 @@ function Menu() {
         <MenuButton name = "Listas" art = "List"/>
         <MenuButton name = "Perfil" art = "Perfil"/>
         <MenuButton name = "Mais" art = "More"/>
+        <MenuSibitarButton/>
     </OuterBox>
   );
 }
