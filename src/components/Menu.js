@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components'
 import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
-import MenuButton from './MenuButton'
-import MenuSibitarButton from './MenuSibitarButton';
+import MenuButton from '../buttons/MenuButton'
+import MenuSibitarButton from '../buttons/MenuSibitarButton';
+import MenuProfileButton from '../buttons/MenuProfileButton';
+
+
+
 const OuterBox = styled.div`
   width: 100vw;
   max-width: 251px;
@@ -21,7 +25,7 @@ const OuterBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  
+  transition: 0.2s;
 `
 const ImgLogo = styled.img`
   max-width: 30px;
@@ -48,6 +52,7 @@ function Menu() {
         <MenuButton name = "Perfil" art = "Perfil"/>
         <MenuButton name = "Mais" art = "More"/>
         <MenuSibitarButton/>
+        <MenuProfileButton/>
     </OuterBox>
   );
 }

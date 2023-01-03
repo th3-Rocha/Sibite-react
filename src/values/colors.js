@@ -11,7 +11,8 @@ var COLORS;
         searchBar: '#202327',
         white: '#d6d9db',
         theme: '#CBBC00',
-        themeDark: '9A8F00',
+        themeDark: '#9A8F00',
+        backText: '#71767b',
     }
     COLORS = Dark;
  }
@@ -25,6 +26,7 @@ var COLORS;
         white: '#d6d9db',
         theme: '#CBBC00',
         themeDark: '9A8F00',
+        backText: '#71767b',
     }
     COLORS = Light;
  }

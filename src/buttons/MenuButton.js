@@ -3,7 +3,6 @@ import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
 
 const ButtonStyle = styled.button`
-  @import url('https://fonts.cdnfonts.com/css/chirp-2');
 
   background-color: black;
   border-radius: 100vw;
@@ -17,7 +16,6 @@ const ButtonStyle = styled.button`
     background-color: ${hexToRgba(COLORS.highlight)};
     cursor: pointer;
   }
-  font-family: 'Chirp', sans-serif;
   
   transition: 0.2s;
 

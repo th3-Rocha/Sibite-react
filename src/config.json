@@ -1,0 +1,32 @@
+{
+    "name": "Murilo da Rocha",
+    "job": "T.I",
+    "github": "th3-rocha",
+    "banner": "https://images.unsplash.com/photo-1668425349792-c3b67aa83153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1292&q=80",
+    "favs":[
+      {
+        "name": "Rocha",
+        "github": "th3-rocha"
+      },
+      {
+        "name": "Breno Ferreira ",
+        "github": "bren1n"
+      },
+      {
+        "name": "Kramer",
+        "github": "DuduKramer"
+      },
+      {
+        "name": "Davi",
+        "github": "dadn2002"
+      },
+      {
+        "name": "Daniel",
+        "github": "DanieLuan"
+      },
+      {
+        "name": "Márcio ",
+        "github": "marciusvic"
+      }
+    ]
+}

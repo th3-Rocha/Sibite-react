@@ -3,14 +3,14 @@ import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
 
 const ButtonStyle = styled.button`
-  @import url('https://fonts.cdnfonts.com/css/chirp-2');
 
   background-color: ${hexToRgba(COLORS.theme)};
-  border-radius: 100vw;
+  border-radius: 400px;
   padding: 12px;
   font-size: 20px;
   color: white;
-  
+  display: flex;
+  justify-content: center;
   border: 0px;
   margin-top:16px;
   margin-right: 30px;
@@ -18,7 +18,6 @@ const ButtonStyle = styled.button`
     background-color: ${hexToRgba(COLORS.themeDark)};
     cursor: pointer;
   }
-  font-family: 'Chirp', sans-serif;
   
   transition: 0.2s;
 
@@ -30,8 +29,9 @@ const ButtonStyle = styled.button`
   @media screen and (max-width: 1360px) {
     p{
       display: none;
+      
     }
-    
+    margin-right: 0px;
   }
   @media screen and (min-width: 1360px) {
     img{
