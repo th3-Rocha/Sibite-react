@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.f2627e77.css","mappings":"oDAEA,EAEI,4BAAgC,CADhC,QAEJ","sources":["index.css"],"sourcesContent":["@import url('https://fonts.cdnfonts.com/css/chirp-2');\r\n\r\n*{\r\n    margin: 0px;\r\n    font-family: 'Chirp', sans-serif;\r\n}"],"names":[],"sourceRoot":""}
