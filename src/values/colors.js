@@ -5,7 +5,7 @@ var COLORS;
  if(1==1){
     const Dark = {
         borderLine: '#2f3336',
-        highlight: '#080808',
+        highlight: '#181818',
         trendBack: '#16181c',
         trendHighLight: '#1d1f23',
         searchBar: '#202327',
@@ -16,7 +16,7 @@ var COLORS;
  else{
     const Light = {
         borderLine: '#5f3336',
-        highlight: '#080808',
+        highlight: '#181818',
         trendBack: '#16181c',
         trendHighLight: '#1d1f23',
         searchBar: '#202327',
