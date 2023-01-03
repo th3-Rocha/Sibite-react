@@ -7,7 +7,7 @@ import MenuProfileButton from '../buttons/MenuProfileButton';
 
 
 
-const OuterBox = styled.div`
+const MenuContainer = styled.div`
   width: 100vw;
   max-width: 251px;
   padding-left: 12px;
@@ -25,7 +25,6 @@ const OuterBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transition: 0.2s;
 `
 const ImgLogo = styled.img`
   max-width: 30px;
@@ -41,7 +40,7 @@ const ImgLogo = styled.img`
 
 function Menu() {
   return (
-    <OuterBox>
+    <MenuContainer>
        <ImgLogo src={process.env.PUBLIC_URL + "/assets/Sibite-logo.png"}/>
         <MenuButton name = "Página Inicial" art = "Home"/>
         <MenuButton name = "Explorar" art = "Explorer"/>
@@ -53,7 +52,7 @@ function Menu() {
         <MenuButton name = "Mais" art = "More"/>
         <MenuSibitarButton/>
         <MenuProfileButton/>
-    </OuterBox>
+    </MenuContainer>
   );
 }
 

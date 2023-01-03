@@ -1,23 +1,27 @@
 import styled, { css } from 'styled-components'
 import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
-
-const OuterBox = styled.div`
-  width: 380px;
+import TrendSearchbar from '../buttons/TrendSearchbar';
+const TrendContainer = styled.div`
+  width: 350px;
   height: 100vh;
-  border-left: 1px;
-  border-left-color: ${hexToRgba(COLORS.borderLine)};
-  border-left-style: solid;
-  
+  margin-left: 30px;
+  margin-right: 10px;
+  @media screen and (max-width: 1100px) {
+    width: 310px;
+  }
+  @media screen and (max-width: 1070px) {
+    display: none;
+  }
 `
 
 
 
 function Trend() {
   return (
-    <OuterBox>
-      
-    </OuterBox>
+    <TrendContainer>
+      <TrendSearchbar/>
+    </TrendContainer>
   );
 }
 

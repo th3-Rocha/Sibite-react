@@ -19,7 +19,7 @@ const ButtonStyle = styled.button`
     cursor: pointer;
   }
   
-  transition: 0.2s;
+  transition: 0.0s;
 
   p{
     margin: 0px 20px 0px 20px;

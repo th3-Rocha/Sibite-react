@@ -17,6 +17,7 @@ const ButtonStyle = styled.button`
   
   border: 0px;
   margin-top:16px;
+  
   align-items: center;
   &:hover{
     background-color: ${hexToRgba(COLORS.highlight)};
@@ -37,7 +38,8 @@ const ButtonStyle = styled.button`
     }
   }
   
-  margin-top: 100%;
+  margin-top: auto;
+  margin-bottom: 12px;
   
 `
 const ImageProfile = styled.img`
@@ -50,8 +52,9 @@ const TextProfile = styled.div`
    width: max-content;
 `
 const TextProfileArroba = styled.p`
-   color:  ${hexToRgba(COLORS.backText)};;
-   
+   color:  ${hexToRgba(COLORS.backText)};
+   font-family: sans-serif;
+   font-weight: 100;
 `
 
 const ProfileSvg = styled.img`

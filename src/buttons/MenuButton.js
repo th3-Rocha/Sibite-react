@@ -25,6 +25,7 @@ const ButtonStyle = styled.button`
   @media screen and (max-width: 1360px) {
     p{
       display: none;
+      color:transparent;
     }
     
   }
