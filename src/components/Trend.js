@@ -1,7 +1,10 @@
 import styled, { css } from 'styled-components'
 import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
-import TrendSearchbar from '../buttons/TrendSearchbar';
+import TrendSearchbar from '../subComponents/TrendSearchBar';
+
+import TrendGrid from '../subComponents/TrendGrid';
+
 const TrendContainer = styled.div`
   width: 350px;
   height: 100vh;
@@ -21,6 +24,7 @@ function Trend() {
   return (
     <TrendContainer>
       <TrendSearchbar/>
+      <TrendGrid/>
     </TrendContainer>
   );
 }

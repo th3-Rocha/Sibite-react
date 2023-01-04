@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components'
 import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
-import MenuButton from '../buttons/MenuButton'
-import MenuSibitarButton from '../buttons/MenuSibitarButton';
-import MenuProfileButton from '../buttons/MenuProfileButton';
+import MenuButton from '../subComponents/MenuButton'
+import MenuSibitarButton from '../subComponents/MenuSibitarButton';
+import MenuProfileButton from '../subComponents/MenuProfileButton';
 
 
 

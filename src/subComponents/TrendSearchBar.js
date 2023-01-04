@@ -39,7 +39,7 @@ const Inputer = styled.input`
     }
     padding-left: 60px;
     &::placeholder{
-        color: ${hexToRgba(COLORS.backText)};;
+        color: ${hexToRgba(COLORS.backText)};
     }
 `
 const Scope = styled.img`
