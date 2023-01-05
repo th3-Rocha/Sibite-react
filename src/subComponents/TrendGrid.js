@@ -12,8 +12,8 @@ const Grid = styled.div`
     ::-webkit-scrollbar {
         display: none;
     }
-    max-height: 94.5vh;
-   
+    max-height: 93.5vh;
+   margin-top: 4px;
     
 `
 

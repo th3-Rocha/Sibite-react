@@ -11,7 +11,7 @@ const WhatsContainner = styled.div`
     width: 100%;
     border-radius: 15px;
     
-    margin-top: 15px;
+    margin-top: 11px;
     border: 0px;
     display: flex;
     flex-direction: column;

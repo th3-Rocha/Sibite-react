@@ -13,7 +13,7 @@ const MenuContainer = styled.div`
   padding-left: 12px;
   padding-right: 12px;
   @media screen and (max-width: 1360px) {
-    max-width: 88px;
+    max-width: 64px;
     align-items: center;
     
   }

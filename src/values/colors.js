@@ -14,6 +14,7 @@ var COLORS;
         themeDark: '#9A8F00',
         themeLight: '#edff24',
         backText: '#71767b',
+        whiteText: '#ffff'
     }
     COLORS = Dark;
  }
