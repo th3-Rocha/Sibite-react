@@ -16,11 +16,17 @@ const Header = styled.div`
     padding-right:16px;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: -50px;
+    z-index: +10;
+    position: relative;
+    background: rgba(0, 0, 0, 0.7); // Make sure this color has an opacity of less than 1
+     backdrop-filter: blur(10px); // This be the blur
 `
 const Imgs = styled.button`
 
-  background-color: black;
+  background-color: transparent;
   border-radius: 100vw;
+  
   padding: 10px;
   width: max-content;
   color: white;

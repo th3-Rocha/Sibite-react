@@ -17,7 +17,7 @@ const Container = styled.div`
   border-bottom: 1px;
   border-color: ${hexToRgba(COLORS.borderLine)};
   border-style: solid;
-
+  margin-top: 50px;
 `
 
 const ImageProfile = styled.img`

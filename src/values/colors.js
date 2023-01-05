@@ -14,7 +14,8 @@ var COLORS;
         themeDark: '#9A8F00',
         themeLight: '#edff24',
         backText: '#71767b',
-        whiteText: '#ffff'
+        whiteText: '#ffff',
+        darkTimelineHighlight: '080808'
     }
     COLORS = Dark;
  }
@@ -30,6 +31,7 @@ var COLORS;
         themeDark: '9A8F00',
         themeLight: '#edff24',
         backText: '#71767b',
+        darkTimelineHighlight: '080808'
     }
     COLORS = Light;
  }
