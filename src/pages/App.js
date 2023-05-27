@@ -9,7 +9,11 @@ const Out = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
+  overflow-y:hidden;
+  overflow-x:hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 function App() {

@@ -10,7 +10,7 @@ import React, { useState, useEffect } from "react";
 const Timelinecontainner = styled.div`
   
   height: 100vh;
-  min-width: 600px;
+  min-width: 16.3vw;
   max-width: 600px;
   border-right: 1px;
   border-right-color: ${hexToRgba(COLORS.borderLine)};
@@ -21,10 +21,11 @@ const Scroll = styled.div`
    display: flex;
     flex-direction: column;
     overflow-y:scroll;
+    overflow-x:hidden;
     ::-webkit-scrollbar {
         display: none;
     }
-    max-height: 99.5vh;
+    max-height: 100vh;
 
 
 `
@@ -71,6 +72,7 @@ function Menu() {
   return (
     <Timelinecontainner>
       <TimeHeader/>
+
       <Scroll id="Scroller">
         <TimeSibitar/>
         <TimeShowMoreSibites/>
