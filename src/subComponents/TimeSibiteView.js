@@ -3,6 +3,9 @@ import hexToRgba from 'hex-to-rgba';
 import {COLORS} from '../values/colors';
 import beckEnd from "../beckEnd.json";
 
+import React, { useState, useEffect } from 'react';
+
+
 const SibiteContainner = styled.div`
 
   background-color: black;
@@ -109,9 +112,16 @@ const ActionButton = styled.button`
       cursor: pointer;
     }
 `
+// Método GET
 
+
+
+
+  //metaphorpsum.com/sentences/10
 function TimeSibiteView(props) {
+    
     const rndHour = Math.floor(Math.random() * 23) + 1;
+    const rndNick = Math.floor(Math.random() * 99) + 1;
     const rndStats = Math.floor(Math.random() * 10000) + 1;
     const rndComments = Math.floor(Math.random() * 1000) + 1;
     const rndRe = Math.floor(Math.random() * 1000) + 1;
@@ -119,13 +129,13 @@ function TimeSibiteView(props) {
     return (
       
       <SibiteContainner>   
-            <ImageProfile src={`https://github.com/${beckEnd.Sibites[props.sibiteNum].github}.png`} />
+            <ImageProfile src={props.webProfileImage} />
             <FlexSeparator>
 
 
               <AuthorName>
-                  <p>{`${beckEnd.Sibites[props.sibiteNum].nameAuthor}`}</p>
-                <TextProfileArroba>{`@${beckEnd.Sibites[props.sibiteNum].github}`}</TextProfileArroba>
+                  <p>{"nickname"}</p>
+                <TextProfileArroba>{"@" + props.nickName + rndNick}</TextProfileArroba>
                 <SeparatorHours>·</SeparatorHours>
                 <Hours>{rndHour} h</Hours>
 
@@ -134,8 +144,8 @@ function TimeSibiteView(props) {
 
 
               <Content>
-                <p>{`${beckEnd.Sibites[props.sibiteNum].text}`}</p>
-                <img src = {`${beckEnd.Sibites[props.sibiteNum].mediaUrl}`} ></img>
+                <p>{props.webText}</p>
+                <img src = {props.webImage} ></img>
               
               </Content>       
 
@@ -153,7 +163,7 @@ function TimeSibiteView(props) {
 
 
                 <ActionButton>
-                  <img src={process.env.PUBLIC_URL + "/assets/svg/like.svg"} />
+                  <img src={process.env.PUBLIC_URL + "/assets/svg/Like.svg"} />
                   <p>{rndLikes}</p>
                 </ActionButton>
                 
