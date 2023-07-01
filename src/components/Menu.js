@@ -10,12 +10,15 @@ import MenuProfileButton from '../subComponents/MenuProfileButton';
 const MenuContainer = styled.div`
   width: 100vw;
   max-width: 251px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
   @media screen and (max-width: 1360px) {
     max-width: 64px;
     align-items: center;
     
+  }
+  @media screen and (max-width: 499px) {
+    display: none;
   }
   height: 100vh;
   border-right: 1px;

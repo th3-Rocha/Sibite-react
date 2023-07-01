@@ -7,12 +7,16 @@ import TimeShowMoreSibites from '../subComponents/TimeShowMoreSibites';
 import TimeSibiteView from '../subComponents/TimeSibiteView';
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+const cors = require('cors');
 
 const Timelinecontainner = styled.div`
   
   height: 100vh;
-  min-width: 16.3vw;
+  min-width: 0;
   max-width: 600px;
+  @media screen and (max-width: 499px) {
+    max-width: 100vw;
+  }
   border-right: 1px;
   border-right-color: ${hexToRgba(COLORS.borderLine)};
   border-right-style: solid;
@@ -27,7 +31,7 @@ const Scroll = styled.div`
         display: none;
     }
     max-height: 100vh;
-
+    
 
 `
 //const [dataText, setDataText] = useState([]);
@@ -99,17 +103,17 @@ function Menu() {
 
     fetchDataText();
   }, []);
-  //random NickNames
+  //random NickNames https://api.parser.name/?api_key=7a0937e369401fcb8b4bc028fc4a7823&endpoint=generate&country_code=BR
   useEffect(() => {
     async function fetchDataNickName() {
       try {
         const promises = [];
         for (let i = 0; i < Sibites; i++) {
-          promises.push(axios.get('https://gerador-nomes.wolan.net/apelidos/1'));
+          promises.push(axios.get('https://random-word-api.herokuapp.com/word'));
         }
         const responses = await Promise.all(promises);
-        responses.map((response) => setDataNickName(arr => [...arr,response.data]));
-        console.log(responses);
+         responses.map((response) => setDataNickName(arr => [...arr, response.data]));
+         console.log(dataNickName[0])
         setLoading(false);
       } catch (error) {
         console.log('Error fetching data:', error);
@@ -175,6 +179,7 @@ function Menu() {
           webImage={dataImg[i] || ""}
           webText={dataText[i]}
           nickName={dataNickName[i]}
+          profileName={dataNickName[i]}
         />
       );
     }
@@ -185,13 +190,10 @@ function Menu() {
     
     <Timelinecontainner>
       <TimeHeader/>
-
       <Scroll id="Scroller">
         <TimeSibitar/>
         <TimeShowMoreSibites/>
-
          {isLoading ? 'Loading...' : callSibites(Sibites)}
-          
       </Scroll>
       
 

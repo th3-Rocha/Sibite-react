@@ -70,13 +70,26 @@ const Content = styled.div`
   p{
     font-weight: 100;
     margin-bottom: 10px;
+    text-align: justify;
+    @media screen and (max-width: 666px) {
+      width: 70vw;
+    }@media screen and (max-width: 499px) {
+      width: 74vw;
+    }
   }
   img{
     :hover{
       cursor: pointer;
     }
+    
     border-radius:20px;
     width: 31rem;
+    @media screen and (max-width: 666px) {
+    width: 70vw;
+    }
+    @media screen and (max-width: 499px) {
+      width: 74vw;
+    }
     margin-bottom: 10px;
   }
 `
@@ -134,7 +147,7 @@ function TimeSibiteView(props) {
 
 
               <AuthorName>
-                  <p>{"nickname"}</p>
+                  <p>{props.nickName}</p>
                 <TextProfileArroba>{"@" + props.nickName + rndNick}</TextProfileArroba>
                 <SeparatorHours>·</SeparatorHours>
                 <Hours>{rndHour} h</Hours>
