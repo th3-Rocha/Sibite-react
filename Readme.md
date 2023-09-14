@@ -1,18 +1,45 @@
+Sibite - Twitter Front-End Clone
+Sibite is a React project that clones the front-end functionalities of Twitter.
 
-# Sibite
+About
+Developed with React
+Contains timeline, menu and trending components
+Mimics the UI of Twitter
+Fetches data from mock backends
+Displays errors when backends are unavailable
+Features
+The main features cloned from Twitter are:
 
-O Sibite é um projeto em React que se concentra em reproduzir a interface do usuário do famoso aplicativo de mídia social, o Twitter. Como um simulador de interface, o SIbite se esforça para proporcionar aos usuários uma experiência semelhante ao usar o Twitter, sem a funcionalidade de backend e interação em tempo real.
+Timeline - Shows a feed of tweets
+Menu - Navigation menu like Twitter
+Trends - Displays trending topics and hashtags
+Each feature is implemented in a separate React component.
 
+Setup
+Prerequisites: Node.js and NPM installed.
 
-![Logo](https://th3-rocha.github.io/Sibite-react/assets/Sibite-logo.png)
+Install:
 
+npm install to install dependencies.
 
-## Autores
+Run:
 
-- [@th3-rocha](https://www.github.com/th3-rocha)
+npm start to start the development server.
 
+Build:
 
-## Licença
+npm run build builds production version.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+Backends
+Sibite makes calls to mock backend APIs that return sample data. When backends are unavailable, errors are displayed to the user.
 
+Contributing
+Pull requests are welcome! Feel free to contribute to this front-end clone of Twitter built with React.
+
+Link
+https://th3-rocha.github.io/Sibite-react/
+
+License
+MIT
+
+This README provides an overview of the Sibite project as a front-end clone of Twitter functionality. Can be expanded with more details on the implementation.
