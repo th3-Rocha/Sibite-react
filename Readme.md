@@ -42,8 +42,6 @@ Sibite makes calls to mock backend APIs that return sample data. When backends a
 
 ## Link
 
-## Link do Site
-
 https://th3-rocha.github.io/Sibite-react/
 
 ## Contributing
